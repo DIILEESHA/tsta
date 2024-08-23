@@ -1,0 +1,52 @@
+.testo_container {
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+.transformer {
+  /* position: absolute; */
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding:50px 30px;
+  /* height: 60px; */
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #000; */
+  color: #8f8b8b;
+  transform: rotate(0deg);
+  /* z-index: -1; */
+}
+.halo {
+  justify-content: space-between;
+  display: flex;
+  gap: 0px;
+}
+.halo h2 {
+  font-size: 14px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.testo_para{
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+}
+
+.testo_card {
+  border: 1px solid #dedede;
+  /* display: flex;flex-direction: column; */
+  /* align-items: center;justify-content: center; */
+  margin: 0 10px;
+  padding:20px 30px;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.testo_card h2 {
+  font-size: 14px;
+}

@@ -1,0 +1,117 @@
+.when_container {
+  background-color: #e099ab;
+  position: relative;
+  padding: 50px;
+  
+  margin: 20px;
+}
+
+.when_grid {
+  /* display: flex; */
+  display: grid;
+  margin: 30px 0;
+  grid-template-columns: 1fr 1.5fr;
+
+  gap: 40px;
+}
+
+.linso {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 0 auto;
+  text-align: center;
+  width: 10%;
+  height: 4px;
+  background-color: #D6D6D6;
+  margin: -5px 0 20px 0;
+}
+.linsor {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 1px;
+  background-color: #a9a3a3;
+  margin: -5px 0 20px 0;
+}
+
+.when_title {
+  /* font-family: myFont; */
+  /* font-style: italic; */
+  color: #D6D6D6;
+  color: #D6D6D6;
+
+  /* text-decoration: underline; */
+  font-size: 50px;
+  line-height: 150%;
+  /* margin-bottom: 30px; */
+}
+
+.subon_title {
+  font-size: 22px;
+  /* font-family: myFont; */
+  /* font-style: italic; */
+  color: #D6D6D6;
+  text-shadow: 1px 1px #333;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.when_sub {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.till {
+  position: relative;
+}
+
+.contra {
+  bottom: -30px;
+  right: -30px;
+  position: absolute;
+  /* bottom: 0; */
+}
+
+.contra .newa {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px dotted #333;
+}
+
+.suboner {
+  margin-bottom: 5px;
+  color: #333;
+  /* text-shadow: 1px 3px #333; */
+
+  font-size: 19px;
+}
+
+.subon {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.jo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 20px;
+  /* border: 2px solid #333; */
+}
+
+.when_container::after {
+}

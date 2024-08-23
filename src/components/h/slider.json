@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.imgur.com/7vuRMCR.jpeg",
+      "title": "Acupuncture Therapy",
+      "names": "Zen Wellness"
+    },
+    {
+        "id": 2,
+        "image": "https://i.imgur.com/whtFRCT.jpeg",
+        "title": "Alternative Medicine",
+        "names": "Holistic Harmony"
+      },
+      {
+      "id": 3,
+      "image": "https://i.imgur.com/BEVwP5T.jpeg",
+      "title": "Alternative Medicine",
+      "names": "Holistic Harmony"
+    }
+  ]
+  

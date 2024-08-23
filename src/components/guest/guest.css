@@ -1,0 +1,62 @@
+.hut {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.keha {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #333;
+  color: #333;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+.keha::placeholder {
+  color: #333;
+}
+.susa {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+.gy {
+  background-image: url("../../assets/till.jpeg");
+
+  object-fit: cover;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* height: 100vh; */
+}
+
+.guest_table {
+  width: 100%;
+  background-color: #fff;
+  overflow-x: scroll;
+  /* padding: 20px; */
+}
+
+table thead tr {
+  text-align: left;
+  border: 1px solid #333;
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  /* display: flex;justify-content: start; */
+}

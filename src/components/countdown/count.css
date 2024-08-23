@@ -1,0 +1,31 @@
+.card_container {
+  display: flex;
+  color: #fff;
+  gap: 20px;
+}
+
+.card_time {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.nimna{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 66px;
+
+}
+
+.ji{
+    margin: 5px 0;
+    font-size: 30px;
+    font-weight: 400;
+  font-family: 'GillSans2', sans-serif;
+
+    /* font-family: myFont; */
+}

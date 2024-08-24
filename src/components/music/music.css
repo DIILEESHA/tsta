@@ -1,0 +1,39 @@
+.music-player {
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+.musica{
+  border: 1px solid #333;
+  height: auto;
+}
+
+.music_btn {
+  border: 2px dotted #b3afaf;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.de {
+  color: #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .music_btn {
+    padding: 13px;
+  }
+}

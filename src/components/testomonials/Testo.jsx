@@ -4,11 +4,11 @@ import { PiQuotesBold } from "react-icons/pi";
 
 const Testo = () => {
   return (
-    <div className="testo_container">
+    <div id="praise-wall" className="testo_container">
       <div className="transformer">
         <Marquee
           gradient={true}
-          gradientWidth={200}
+          gradientWidth={10}
           gradientColor="#fff"
           speed={20} // Adjust speed as needed
           direction="right" // Direction of the marquee
@@ -18,7 +18,6 @@ const Testo = () => {
         >
           <div className="halo">
             <div className="testo_card">
-              <PiQuotesBold />
               <p className="testo_para">
                 It is my pleasure to tell you about the miraculous signs and
                 wonders that the Most High God has performed for me. How great
@@ -28,7 +27,6 @@ const Testo = () => {
               <h2>Daniel 4:2, 3 NIV</h2>
             </div>{" "}
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 You did it: you changed wild lament into whirling dance; You
@@ -39,7 +37,6 @@ const Testo = () => {
               <h2>Psalm 30:11, 12 MSG</h2>
             </div>{" "}
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 Yet this I call to mind and therefore I have hope: Because of
@@ -50,17 +47,15 @@ const Testo = () => {
               <h2>Lamentations 3:21-23 NIV</h2>
             </div>
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 It is good to praise the Lord and make music to your name, O
                 Most High, proclaiming your love in the morning and your
                 faithfulness at night
               </p>
-              <h2>Psa 92:2</h2>
+              <h2>Psalm 92:2</h2>
             </div>{" "}
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 I will give thanks to the Lord because of his righteousness; I
@@ -69,7 +64,6 @@ const Testo = () => {
               <h2>(pasalm NIV)</h2>
             </div>
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 For you make me glad by your deeds, Lord; I sing for joy at what
@@ -78,7 +72,6 @@ const Testo = () => {
               <h2>(pasalm NIV)</h2>
             </div>{" "}
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
                 I will give thanks to the Lord because of his righteousness; I
@@ -87,28 +80,24 @@ const Testo = () => {
               <h2>(pasalm NIV)</h2>
             </div>{" "}
             <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
               Praise him for his acts of power; praise him for his surpassing greatness.
               </p>
               <h2>Psalm NIV</h2>
             </div> <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
               Praise the Lord, my soul; all my inmost being, praise his holy name.
               </p>
               <h2>Psalm 103 NIV</h2>
             </div> <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
               Praise the Lord, my soul, and forget not all his benefits—
               </p>
               <h2>Psalm 103 NIV</h2>
             </div> <div className="testo_card">
-              <PiQuotesBold />
 
               <p className="testo_para">
               I will sing of your love and justice; to you, Lord, I will sing praise.

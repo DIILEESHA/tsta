@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "./count.css";
 
 const Countdown = () => {
-  const weddingDate = new Date("2024-09-25T00:00:00");
+  const weddingDate = new Date("2024-09-14T00:00:00");
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
@@ -33,35 +34,69 @@ const Countdown = () => {
       seconds,
     };
   }
-  //   {timeRemaining.hours} HOURS {timeRemaining.minutes} MINS {timeRemaining.seconds} SECS
+
   return (
     <div className="card_container">
-      <div className="card_time">
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
         <h1 className="nimna">{timeRemaining.days}</h1>
         <h2 className="ji">DAYS</h2>
-      </div>
-      <div className="card_time">
-        {/* <h1>:</h1> */}
-      </div>
-      <div className="card_time">
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
+        <h1>:</h1>
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
         <h1 className="nimna">{timeRemaining.hours}</h1>
         <h2 className="ji">HOURS</h2>
-      </div>
-      <div className="card_time">
-        {/* <h1>:</h1> */}
-      </div>
-      <div className="card_time">
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
+        <h1>:</h1>
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
         <h1 className="nimna">{timeRemaining.minutes}</h1>
         <h2 className="ji">MINS</h2>
-      </div>
-      <div className="card_time">
-        {/* <h1>:</h1> */}
-      </div>
-      <div className="card_time">
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
+        <h1>:</h1>
+      </motion.div>
+      <motion.div
+        className="card_time"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      >
         <h1 className="nimna">{timeRemaining.seconds}</h1>
-
         <h2 className="ji">SECS</h2>
-      </div>
+      </motion.div>
     </div>
   );
 };

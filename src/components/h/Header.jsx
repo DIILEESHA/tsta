@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import slider from "./slider.json";
 import Countdown from "../countdown/Countdown";
 import { Parallax } from "react-parallax";
+import 'animate.css';
 var settings = {
   infinite: true,
   speed: 3000,
@@ -20,7 +21,7 @@ var settings = {
 
 const Header = () => {
   return (
-    <div className="header_container">
+    <div className="header_container animate__animated animate__fadeIn">
       <Slider {...settings}>
         {slider.map((doc, index) => (
           <>

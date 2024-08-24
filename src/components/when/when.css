@@ -1,8 +1,8 @@
 .when_container {
-  background-color: #e099ab;
+  background-color: #c78999;
   position: relative;
   padding: 50px;
-  
+
   margin: 20px;
 }
 
@@ -15,6 +15,20 @@
   gap: 40px;
 }
 
+.ko {
+  color: #333;
+  /* margin-top: 10px; */
+  /* text-align: center; */
+  /* text-shadow: 1px 1px #333; */
+  /* font-style: italic; */
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  width: 100%;
+  line-height: 150%;
+  margin: 10px auto 10px 0;
+  /* font-size: 17px; */
+}
+
 .linso {
   display: flex;
   align-items: flex-end;
@@ -23,7 +37,7 @@
   text-align: center;
   width: 10%;
   height: 4px;
-  background-color: #D6D6D6;
+  background-color: #d6d6d6;
   margin: -5px 0 20px 0;
 }
 .linsor {
@@ -35,14 +49,14 @@
   width: 100%;
   height: 1px;
   background-color: #a9a3a3;
-  margin: -5px 0 20px 0;
+  margin: -10px 0 7px 0;
 }
 
 .when_title {
   /* font-family: myFont; */
   /* font-style: italic; */
-  color: #D6D6D6;
-  color: #D6D6D6;
+  color: #d6d6d6;
+  color: #d6d6d6;
 
   /* text-decoration: underline; */
   font-size: 50px;
@@ -54,7 +68,7 @@
   font-size: 22px;
   /* font-family: myFont; */
   /* font-style: italic; */
-  color: #D6D6D6;
+  color: #d6d6d6;
   text-shadow: 1px 1px #333;
   line-height: 150%;
   margin-bottom: 10px;
@@ -83,7 +97,7 @@
   height: 150px;
   border-radius: 50%;
   object-fit: contain;
-  border: 3px dotted #333;
+  /* border: 3px dotted #333; */
 }
 
 .suboner {
@@ -107,11 +121,287 @@
 
 .jo {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
   /* border: 2px solid #333; */
 }
 
 .when_container::after {
+}
+
+.venue_container {
+  padding: 70px 100px;
+  background-color: #f0eded;
+
+  /* background-color: #f5ebeb; */
+}
+
+.venue_grid {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.venue_img {
+  width: 60px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  margin-top: 70px;
+  transition: transform 0.3s ease; /* Add a transition effect to smoothly scale the image */
+}
+
+.venue_sub_grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease; /* Add a transition effect to smoothly change the box shadow */
+}
+
+.venue_sub_grid:hover {
+  box-shadow: rgba(202, 202, 206, 0.2) 0px 7px 5px 0px;
+}
+
+.venue_sub_grid:hover .venue_img {
+  transform: scale(1.2); /* Scale the image on hover */
+}
+
+.venue_title {
+  color: #333;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 18px;
+  z-index: 100;
+}
+
+.venue_other {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin: 5px 0;
+  opacity: 80%;
+}
+
+.venue_other:last-child {
+  margin-bottom: 70px;
+}
+.hover-container {
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: background-color 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+}
+
+.address {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.address_section {
+  color: #333;
+  margin: 40px 0 0px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0px 20px 0;
+  border: 1px dotted #cecccc;
+  border-radius: 5px;
+  /*background-color: #fff;
+  */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hoteler {
+  font-size: 19px;
+  opacity: 80%;
+  line-height: 1.4;
+}
+
+.contact_person {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.coco {
+  width: 120px;
+
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid #dfdbdb;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.co_sub {
+  background-color: #eeebeb;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 1px solid #eeebeb;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.coco_name {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-family: "poppins", sans-serif;
+}
+.coco_name1 {
+  font-size: 16px;
+  text-align: center;
+
+  color: #333;
+  font-family: "raleway", sans-serif;
+}
+.venue_sub_grid:hover .hover-image {
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mapper {
+  margin: 50px 0;
+}
+.venue_sub_grid:hover .venue_title {
+  color: #fff;
+  font-weight: 900;
+}
+.venue_sub_grid:hover .venue_other {
+  color: #fff;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1070px) {
+  .venue_container {
+    padding: 70px 50px;
+  }
+
+  .gallery_sub {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .when_grid {
+    /* display: flex; */
+    display: grid;
+    margin: 10px 0;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+  .when_container {
+    padding: 20px;
+  }
+  .jo {
+    height: 60vh;
+  }
+  .contra .newa {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .venue_container {
+    padding: 70px 30px;
+  }
+
+  .venue_grid {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contact_person {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .co_sub:nth-child(4) {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 738px) {
+  .venue_grid {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 618px) {
+  .venue_grid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact_person {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .co_sub:nth-child(4) {
+    /* grid-column: 2/3; */
+  }
+
+  .hoteler {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact_person {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .co_sub:nth-child(4) {
+    /* grid-column: 2/3; */
+  }
 }
